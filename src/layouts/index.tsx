@@ -21,27 +21,8 @@ export default () => (
                 path: '/product',
                 name: '产品配置',
                 indexRoute: {
-                  component: 'ConfigProduct/index',
+                  component: '@ConfigProduct/index',
                 },
-                routes: [
-                  {
-                    path: 'new',
-                    component: 'ConfigProduct/NewConfig',
-                  },
-                ],
-              },
-              {
-                path: 'productManage',
-                name: '产品管理',
-                indexRoute: {
-                  component: 'ConfigProductAll/index',
-                },
-                routes: [
-                  {
-                    path: 'detail/:productKey',
-                    component: 'ConfigProductAll/Detail',
-                  },
-                ],
               },
               {
                 path: 'meta',
