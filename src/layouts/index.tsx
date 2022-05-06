@@ -8,9 +8,9 @@ export default () => (
     }}
   >
     <ProLayout
-      location={{
-        pathname: '/config/template/new',
-      }}
+      // location={{
+      //   pathname: '/config/template/new',
+      // }}
       route={{
         routes: [
           {
@@ -18,7 +18,7 @@ export default () => (
             name: '配置中心',
             routes: [
               {
-                path: 'product',
+                path: '/product',
                 name: '产品配置',
                 indexRoute: {
                   component: 'ConfigProduct/index',
