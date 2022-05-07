@@ -10,6 +10,14 @@ export default {
   'POST /api/users/create': (req: Request, res: Response) => {
     // 添加跨域请求头
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.end('ok');
+    res.json([1, 2, 3, 4]);
+  },
+  'delete /api/user/:id': (req: Request, res: Response) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.json({ code: 0 });
+  },
+  'put /api/user/:id': (req: Request, res: Response) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.json({ code: 1 });
   },
 };

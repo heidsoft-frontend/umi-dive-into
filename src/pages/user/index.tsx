@@ -1,7 +1,15 @@
 import React from 'react';
-
+import { useModel } from 'umi';
 function User() {
-  return <div>User 测试</div>;
+  const { initialState } = useModel('@@initialState');
+  return (
+    <div>
+      User 测试
+      {initialState?.id}
+      <br />
+      {initialState?.name}
+    </div>
+  );
 }
 
 export default User;
