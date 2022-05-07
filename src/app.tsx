@@ -1,6 +1,6 @@
 export async function getInitialState(): Promise<API.IUser> {
   return Promise.resolve({
-    id: 1,
+    id: 0,
     name: '云服务圈',
   });
 }
