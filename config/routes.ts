@@ -3,6 +3,7 @@ export default [
   {
     path: '/',
     name: '仪表盘',
+    icon: 'crown',
     component: '@/layouts/index',
     routes: [
       {
