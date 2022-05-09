@@ -22,6 +22,7 @@ export default {
   },
   'POST /api/users/login': (req: Request, res: Response) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
+    console.log(req);
     if (Math.random() > 0.5) {
       res.json({ code: 0 });
     } else {
