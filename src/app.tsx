@@ -1,3 +1,6 @@
+import { RequestConfig } from 'umi';
+import { ResponseError } from 'umi-request';
+import { notification } from 'antd';
 export async function getInitialState(): Promise<API.IUser> {
   return Promise.resolve({
     id: 0,
@@ -8,3 +11,16 @@ export async function getInitialState(): Promise<API.IUser> {
     },
   });
 }
+
+// 全局拦截器
+export const request: RequestConfig = {
+  errorHandler: (error: ResponseError) => {
+    //国际化方案
+    //const {messages} = getIntl(getLocale());
+    const { response } = error;
+    notification.error({
+      description: '你的网络发生异常，无法连接服务器',
+      message: '网络异常',
+    });
+  },
+};
