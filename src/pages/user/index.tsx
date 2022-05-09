@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useModel, useHistory } from 'umi';
 import { Button } from 'antd';
+import { useAccess } from 'umi';
 function User() {
   // 历史函数
   const history = useHistory();
@@ -10,6 +11,12 @@ function User() {
   //使用模型获取数据
   //https://github.com/ant-design/ant-design-pro/issues/8109
   const { user, singin, singout } = useModel('user');
+
+  //获取access 模块
+  const canAccess = useAccess();
+  if (!canAccess.isAdmin) {
+    return null;
+  }
   return (
     <div>
       User 测试
