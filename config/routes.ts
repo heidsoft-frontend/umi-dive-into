@@ -16,6 +16,13 @@ export default [
         access: 'canAccess',
         component: '@/pages/user/index',
       },
+      {
+        exact: true,
+        path: '/services',
+        name: '服务列表',
+        access: 'canAccess',
+        component: '@/pages/services/index',
+      },
     ],
   },
 ];

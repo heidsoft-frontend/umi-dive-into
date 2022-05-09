@@ -40,7 +40,16 @@ const authHeaderIntercceptor = (url: string, options: RequestOptions) => {
   };
 };
 
+const demoResponseIntercceptor = (
+  response: Response,
+  options: RequestOptions,
+) => {
+  console.log(response.status);
+  return response;
+};
+
 export const request: RequestConfig = {
   errorHandler,
   requestInterceptors: [authHeaderIntercceptor],
+  responseInterceptors: [],
 };

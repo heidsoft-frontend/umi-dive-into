@@ -4,7 +4,7 @@ import routes from './routes';
 export default defineConfig({
   layout: {
     // logo 配置
-    name: '宝尊云平台',
+    name: 'CloudMesh',
     // 是否开启国际化
     locale: false,
   },
