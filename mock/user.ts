@@ -20,4 +20,12 @@ export default {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.json({ code: 1 });
   },
+  'POST /api/user/login': (req: Request, res: Response) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    if (Math.random() > 0.5) {
+      res.json({ code: 0 });
+    } else {
+      res.json({ code: 1 });
+    }
+  },
 };

@@ -1,6 +1,7 @@
 import { Access } from '../src/.umi/plugin-access/access';
 export default [
   { exact: true, path: '/', component: '@/pages/index' },
+  { path: '/login', component: '@/pages/login/index', layout: false },
   {
     path: '/',
     component: '@/layouts/index',

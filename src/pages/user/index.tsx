@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, useModel, useHistory } from 'umi';
-import { Button } from 'antd';
+import { Link, useModel, useHistory, Access } from 'umi';
+import { Button, Space } from 'antd';
 import { useAccess } from 'umi';
 function User() {
   // 历史函数
@@ -47,14 +47,21 @@ function User() {
       </Button>
       <Link to="/userinfo"></Link>
       <br />
-      <Button
-        type="primary"
-        onClick={() => {
-          history.push('/userinfo');
-        }}
-      >
-        进入用户信息页面
-      </Button>
+      <Space>
+        <Button
+          type="primary"
+          onClick={() => {
+            history.push('/userinfo');
+          }}
+        >
+          进入用户信息页面
+        </Button>
+      </Space>
+      <Space>
+        <Access accessible={true}>
+          <Button type="primary">访问权限控制</Button>
+        </Access>
+      </Space>
     </div>
   );
 }
