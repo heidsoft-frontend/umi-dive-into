@@ -13,5 +13,5 @@ export default defineConfig({
   },
   routes: routes,
   fastRefresh: {},
-  mfsu: {},
+  // mfsu: {},
 });

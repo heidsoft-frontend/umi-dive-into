@@ -1,4 +1,3 @@
-import { Access } from '../src/.umi/plugin-access/access';
 export default [
   { exact: true, path: '/', component: '@/pages/index' },
   { path: '/login', component: '@/pages/login/index', layout: false },
@@ -22,6 +21,13 @@ export default [
         name: '服务列表',
         access: 'canAccess',
         component: '@/pages/services/index',
+      },
+      {
+        exact: true,
+        path: '/products',
+        name: '产品列表',
+        access: 'canAccess',
+        component: '@/pages/products/index',
       },
     ],
   },

@@ -1,4 +1,7 @@
 declare namespace API {
+  interface IProduct {
+    title: string;
+  }
   interface IRole {
     isAdmin: boolean;
     isEditor: boolean;
