@@ -2,6 +2,7 @@
 ```
 https://umijs.org/docs/getting-started 
 yarn create @umijs/umi-app 
+yarn add @ant-design/pro-table
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
 ## Getting Started
