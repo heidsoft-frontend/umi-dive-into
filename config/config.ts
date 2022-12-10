@@ -4,7 +4,7 @@ import routes from './routes';
 export default defineConfig({
   layout: {
     // logo 配置
-    name: 'CloudMesh',
+    name: '云服务圈',
     // 是否开启国际化
     locale: false,
   },
