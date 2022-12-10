@@ -29,6 +29,13 @@ export default [
         access: 'canAccess',
         component: '@/pages/products/index',
       },
+      {
+        exact: true,
+        path: '/cloud',
+        name: '云平台',
+        access: 'canAccess',
+        component: '@/pages/cloud/index',
+      },
     ],
   },
 ];
