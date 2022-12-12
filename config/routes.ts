@@ -36,6 +36,20 @@ export default [
         access: 'canAccess',
         component: '@/pages/cloud/index',
       },
+      {
+        exact: true,
+        path: '/lifecycle',
+        name: '组建生命周期',
+        access: 'canAccess',
+        component: '@/pages/lifecycle/index',
+      },
+      {
+        exact: true,
+        path: '/parentchild',
+        name: '父组通信',
+        access: 'canAccess',
+        component: '@/pages/parentChild/index',
+      },
     ],
   },
 ];
