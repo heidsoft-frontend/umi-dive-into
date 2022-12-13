@@ -50,6 +50,13 @@ export default [
         access: 'canAccess',
         component: '@/pages/parentChild/index',
       },
+      {
+        exact: true,
+        path: '/effecthook',
+        name: '副作用测试',
+        access: 'canAccess',
+        component: '@/pages/effecthook/index',
+      },
     ],
   },
 ];
